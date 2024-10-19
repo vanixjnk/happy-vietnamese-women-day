@@ -1,0 +1,107 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ff225e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-header h1 {
+    font-size: 28px;
+    color: #ff225e;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-body p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.card-footer img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card-footer img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Wishes Card */
+
+.wishes-card {
+    text-align: center;
+}
+
+.wishes-card h2 {
+    color: #ff225e;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.wishes-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wishes-card ul li {
+    font-size: 18px;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.wishes-card ul li:last-child {
+    border-bottom: none;
+}
+
+
+/* Responsive Styles */
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .card-header h1 {
+        font-size: 32px;
+    }
+    .wishes-card h2 {
+        font-size: 28px;
+    }
+    .wishes-card ul li {
+        font-size: 20px;
+    }
+}

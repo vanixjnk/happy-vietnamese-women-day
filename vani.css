@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #ff225e;
+    background-color: #ff648e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {
 }
 
 .card {
-    background: #fff;
+    background: #fdd2d2;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -85,6 +85,25 @@ body {
 
 .wishes-card ul li:last-child {
     border-bottom: none;
+}
+
+
+/* Footer Styles */
+
+.footer {
+    width: 100%;
+    background-color: #ffffff;
+    color: #ff225e;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
 }
 
 
